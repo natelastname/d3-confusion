@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Confusion Matrix</title>
+    <style>
+      body {
+          max-width: 60em;
+          margin: auto;
+      }
+      
+      svg.matrixdiagram {
+          font: 1em sans-serif;
+      }
+      svg.matrixdiagram .label {
+          fill: black;
+          font-size: 1em;
+          text-anchor: end;
+      }
+      svg.matrixdiagram .column.label {
+          text-anchor: start;
+      }
+      svg.matrixdiagram rect {
+          fill: #eee;
+          /* stroke: #d62333; */
+          stroke: #fff;
+          stroke-width: 0;
+      }
+      svg.matrixdiagram rect:hover {
+          stroke-width: 2px;
+      }
+</style>
+</head>
+<body>
+  <div id="matContainer"></div>
+  <script src="main.js"></script>
+</body>
+</html>
+
